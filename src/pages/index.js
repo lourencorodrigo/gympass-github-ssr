@@ -1,12 +1,7 @@
 import React from "react";
 
-import Input from "../components/Input";
-import "../static/styles/reset.css";
+import Home from "./Home";
 
-class App extends React.Component {
-  render() {
-    return <Input placeholder="Enter Your User GitHub" />;
-  }
-}
+const App = () => <Home />;
 
 export default App;

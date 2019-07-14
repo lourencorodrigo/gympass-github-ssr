@@ -11,34 +11,40 @@ export const Wrapper = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  box-shadow: 0px 0px ${em(12)} rgba(28, 28, 28, 0.24);
+  box-shadow: 0 0 ${em(12)} rgba(28, 28, 28, 0.24);
   transition: background 0.15s ease-in-out;
 
   &:hover {
     background: #353d4c;
   }
+
+  &:focus-within {
+    background: #30384b;
+  }
 `;
 
-export const ImageWrapper = styled.div`
+export const Label = styled.label`
   padding-left: ${em(16)};
+  margin: 0;
 `;
 
 export const Image = styled.img`
-  width: 30px;
+  width: ${em(30)};
+  user-select: none;
 `;
 
-export const InputWrapper = styled.input`
+export const Input = styled.input`
   border: 0;
   background: transparent;
   width: 100%;
-  text-align: center;
   outline-width: 0;
   font-weight: bold;
-  font-size: ${em(24)};
+  font-size: ${em(18)};
   line-height: ${em(28)};
   height: 90%;
   color: #717888;
   font-family: "Roboto", sans-serif;
+  padding-left: ${em(8)};
 
   ::placeholder {
     color: #717888;

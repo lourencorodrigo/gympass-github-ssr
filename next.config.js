@@ -1,5 +1,17 @@
-const withCSS = require("@zeit/next-csss");
+const withCSS = require("@zeit/next-css");
 
 module.exports = withCSS({
-  distDir: "../dist"
+  distDir: "../dist",
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+      use: {
+        loader: "url-loader",
+        options: {
+          limit: 100000
+        }
+      }
+    });
+    return config;
+  }
 });
