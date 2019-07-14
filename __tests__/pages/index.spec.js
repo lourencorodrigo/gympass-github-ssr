@@ -1,7 +1,7 @@
 import * as React from "react";
 import { mount } from "enzyme";
 
-import IndexPage from "./index";
+import IndexPage from "../../src/pages/index";
 
 describe("Pages", () => {
   describe("Index", () => {
