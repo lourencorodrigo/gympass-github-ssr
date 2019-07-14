@@ -1,0 +1,26 @@
+{
+  "name": "gympass-github",
+  "version": "1.0.0",
+  "description": "Gympass",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lourencorodrigo/gympass-github-ssr.git"
+  },
+  "author": "Rodrigo Lourenço",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lourencorodrigo/gympass-github-ssr/issues"
+  },
+  "homepage": "https://github.com/lourencorodrigo/gympass-github-ssr#readme",
+  "dependencies": {
+    "next": "^9.0.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
