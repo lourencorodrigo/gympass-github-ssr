@@ -33,8 +33,12 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           <title>Gympass GitHub</title>
+          <link
+            href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+            rel="stylesheet"
+          ></link>
         </Head>
-        <body style={{ background: "#1d2331" }}>
+        <body>
           <Main />
           <NextScript />
         </body>
